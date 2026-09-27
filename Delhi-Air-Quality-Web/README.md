@@ -15,7 +15,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 python run.py
 ```
-Backend: http://localhost:8000
+Backend: https://aqi-mapping-api.onrender.com
 
 ## Run frontend
 In another terminal:
