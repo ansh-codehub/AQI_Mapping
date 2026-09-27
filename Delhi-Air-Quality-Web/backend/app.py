@@ -120,25 +120,16 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-
-    # Vite frontend
     allow_origins=[
         "http://localhost:5173",
         "http://127.0.0.1:5173",
-    ],
 
+        # Your deployed Render frontend
+        "https://YOUR-FRONTEND-NAME.onrender.com",
+    ],
     allow_credentials=False,
-
-    allow_methods=[
-        "GET",
-        "POST",
-        "OPTIONS",
-    ],
-
+    allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],
-
-    # IMPORTANT:
-    # Frontend needs to read these raster headers.
     expose_headers=[
         "X-Bounds",
         "X-Min",
