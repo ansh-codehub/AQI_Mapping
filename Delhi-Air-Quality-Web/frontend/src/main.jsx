@@ -6,7 +6,7 @@ import 'leaflet/dist/leaflet.css';
 import {Wind, Map as MapIcon, Activity, Layers3, LocateFixed, RefreshCw} from 'lucide-react';
 import './styles.css';
 
-const API='http://localhost:8000';
+const API='https://aqi-mapping-api.onrender.com';
 const seasons=['Pre-Monsoon','Monsoon','Post-Monsoon','Winter'];
 const pollutants=['NO2','SO2','CO','SAQI'];
 const units={NO2:'mol/m²',SO2:'mol/m²',CO:'mol/m²',SAQI:'Index'};
