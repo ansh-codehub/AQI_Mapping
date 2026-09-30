@@ -24,7 +24,7 @@ cd frontend
 npm install
 npm run dev
 ```
-Open the URL Vite prints, normally http://localhost:5173.
+Open the URL Vite prints, normally https://aqi-mapping.onrender.com
 
 ## What changed from the QGIS version
 - Removed all `qgis.PyQt`, `qgis.core`, and `qgis.gui` dependencies.
